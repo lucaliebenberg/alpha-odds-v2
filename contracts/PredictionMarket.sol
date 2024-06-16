@@ -1,6 +1,9 @@
  // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+// import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
+
+
 interface IERC20Token {
   function transfer(address, uint256) external returns (bool);
    function approve(address, uint256) external returns (bool);
@@ -21,6 +24,7 @@ interface IERC20Token {
 }
 contract PredictionMarket {
    using SafeMath for uint;
+
    uint internal numContracts = 0;
    address internal cUsdTokenAddress = 0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1;
    struct Contract {
