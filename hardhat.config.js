@@ -13,11 +13,16 @@ module.exports = {
       },
     ],
   },
-  networks: {
-    base_mainnet: {
-      url: "https://mainnet.base.org/",
-      chainId: 8453,
-      accounts: [`0x${process.env.PRIVATE_KEY}`],
-    },
-  },
+  // networks: {
+  //   // base_mainnet: {
+  //   //   url: "https://mainnet.base.org/",
+  //   //   chainId: 8453,
+  //   //   accounts: [`0x${process.env.PRIVATE_KEY}`],
+  //   // },
+  //   localhost: {
+  //     url: "http://127.0.0.1:8545/",
+  //     chainId: 31337,
+  //     accounts: [`0x${process.env.PRIVATE_KEY}`],
+  //   },
+  // },
 };

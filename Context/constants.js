@@ -2,9 +2,9 @@ import ReFiTokenSale from "./ReFiTokenSale.json";
 import TokenSale from "./TokenSale.json";
 // import PredictionMarket from "./PredictionMarket.json";
 
-// export const OWNER_ADDRESS = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"; // Account 2 
 //OWNER OF CONTRACT
-export const OWNER_ADDRESS = "0xBF429dBeDdeeC9393C95D4452ed88E2FC9615169"; // Coinbase wallet 
+export const OWNER_ADDRESS = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"; // Account 2 
+// export const OWNER_ADDRESS = "0xBF429dBeDdeeC9393C95D4452ed88E2FC9615169"; // Coinbase wallet 
 
 //TOKEN
 export const TOKEN_ADDRESS = "0x6BE41F18587e992c7B5588755Ee49DFb5e33139b"; // ReFiTokenSale
@@ -108,7 +108,7 @@ const networks = {
     rpcUrls: ["https://forno.celo.org"],
     blockExplorerUrls: ["https://explorer.celo.org"],
   },
-  localhost: {
+    localhost: {
     chainId: `0x${Number(31337).toString(16)}`,
     chainName: "localhost",
     nativeCurrency: {

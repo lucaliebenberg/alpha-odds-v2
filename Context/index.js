@@ -21,6 +21,7 @@ const StateContext = createContext();
 export const StateContextProvider = ({ children }) => {
   const notifySuccess = (msg) => toast.success(msg, { duration: 2000 });
   const notifyError = (msg) => toast.error(msg, { duration: 2000 });
+  
   //  STATE VARIABLE
   const [address, setAddress] = useState("");
   const [balance, setBalance] = useState();
