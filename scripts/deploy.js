@@ -39,11 +39,20 @@ async function main() {
   await tokenSale.deployed();
   console.log(` TokenSale: ${tokenSale}`);
   console.log(` TokenSale address: ${tokenSale.address}`);
+
+  // Deploy PredictionMarket contract
+  const PredictionMarket = await hre.ethers.getContractFactory("PredictionMarket");
+  const predictionMarket = await PredictionMarket.deploy()
+
+  await predictionMarket.deployed()
+  console.log(` PredictionMarket: ${predictionMarket}`);
+  console.log(` PredictionMarket address: ${predictionMarket.address}`);
 }
 
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-//npx hardhat run scripts/deploy.js --network base_mainnet
-//npx hardhat run scripts/deploy.js --network localhost
+
+// npx hardhat run scripts/deploy.js --network celo_mainnet
+// npx hardhat run scripts/deploy.js --network localhost
