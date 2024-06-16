@@ -1,6 +1,6 @@
 import ReFiTokenSale from "./ReFiTokenSale.json";
 import TokenSale from "./TokenSale.json";
-// import PredictionMarket from "./PredictionMarket.json";
+import PredictionMarket from "./PredictionMarket.json";
 
 //OWNER OF CONTRACT
 export const OWNER_ADDRESS = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"; // Account 2 
@@ -15,8 +15,8 @@ export const TOKEN_SALE_ADDRESS = "0x248CD64CB901f3B881F0F1F0A41E2568f4FB748f"; 
 export const TOKEN_SALE_ABI = TokenSale.abi;
 
 // PREDICTION MARKET
-// export const PREDICTION_MARKET_ADDRESS = "";
-// export const PREDICTION_MARKET_ABI = PredictionMarket.abi;
+export const PREDICTION_MARKET_ADDRESS = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"; // PredictionMarket
+export const PREDICTION_MARKET_ABI = PredictionMarket.abi;
 
 //NETWORK
 const networks = {
